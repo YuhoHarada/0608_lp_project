@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../img/sky.jpg) center/cover fixed;
+    color: #333;
+    font-family: fantasy;
+}
+
+/* ************* nav ************* */
+h1{
+    font-size: 1em;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 10%;
+    z-index: 999;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* ************* country ************* */
+.country{
+    height: 80vh;
+    position: relative;
+}
+
+.country h2{
+    font-size: 3em;
+    line-height: 2em;
+    position: absolute;
+    top: 30vh;
+    left: 10%;
+    color: #fff;
+    text-shadow: 1px 1px 0 #333;
+}
+
+.country button{
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #333;
+    position: absolute;
+    top: 45vh;
+    left: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.country:nth-of-type(2n) h2,
+.country:nth-of-type(2n) button{
+    left: auto;
+    right: 10%;
+}
+
+.country div{
+    background: #EDAE0080;
+    position: absolute;
+    width: 40%;
+    height: 50vh;
+    top: 10%;
+    right: 10%;
+    padding: 50px;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.country:nth-of-type(2n) div{
+    right: auto;
+    left: 10%;
+}
+
+.country button:hover+div{
+    display: block;
+}
+
+.aus{
+    background: url(../img/1australia.jpg) center/cover no-repeat;
+}
+
+.can{
+    background: url(../img/2canada.jpg) center/cover no-repeat;
+}
+
+.nzl{
+    background: url(../img/3newzealand.jpg) center/cover no-repeat;
+}
+
+.gbr{
+    background: url(../img/4england.jpg) center/cover no-repeat;
+}
+
+.deu{
+    background: url(../img/5germany.jpg) center/cover no-repeat;
+}
+
+/* ************* WH? ************* */
+#wh, footer{
+    background: #fff;
+    padding: 100px 10%;
+}
+
+#wh h2, footer h2{
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#wh p{
+    line-height: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ************* data ************* */
+.data{
+    text-align: center;
+    padding: 100px 0;
+}
+.data div{
+    font-family: 'Roboto', sans-serif;
+    width: 25%;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 50px 0;
+    margin: 2.5%;
+}
+
+.data div h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.data div p{
+    line-height: 1.5em;
+}
+
+
+/* ************* contact ************* */
+footer{
+    text-align: center;
+}
+
+footer p, footer a{
+    margin: 50px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.line{
+    color: #00B900;
+}
+
+.twitter{
+    color: #1DA1F2;
+}
+
+.fb{
+    color: #3C5A99;
+}
+
+.insta{
+    color: #CF2E92;
+}
