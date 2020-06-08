@@ -35,6 +35,7 @@ nav ul li{
 a{
     text-decoration: none;
     color: #333;
+    text-shadow: 1px 1px 0 #fff;
 }
 
 a:hover{
@@ -74,15 +75,30 @@ a:hover{
 }
 
 .country div{
-    background: #EDAE0080;
+    background: #EDAE00a0;
     position: absolute;
     width: 40%;
-    height: 50vh;
     top: 10%;
     right: 10%;
     padding: 50px;
     display: none;
     font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 1.3em;
+}
+
+.country div h3,
+.country div p{
+    display: inline-block;
+    width: 40%;
+    line-height: 2em;
+    vertical-align: top;
+}
+
+.country div p:last-of-type{
+    width: 100%;
+    line-height: 1.5em;
+    margin-top: 40px;
 }
 
 .country:nth-of-type(2n) div{
